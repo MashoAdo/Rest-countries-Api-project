@@ -1,0 +1,104 @@
+// import google fonts
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+// Reset Css
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+// Reusable css
+// font size
+body {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 14px;
+}
+$Detail-Page: 16px;
+
+// font weight
+$font-weight: (
+	"light": 300,
+	"semi-bold": 600,
+	"bold": 800,
+);
+
+// mixins
+@mixin flex($x, $y) {
+	display: flex;
+	flex-direction: $x;
+	justify-content: $y;
+	align-items: centre;
+}
+// colors
+$Dark-Mode-Elements: hsl(209, 23%, 22%);
+$Dark-Mode-Background: hsl(207, 26%, 17%);
+$Light-Mode-Text: hsl(200, 15%, 8%);
+$Light-Mode-Input: hsl(0, 0%, 52%);
+$Light-Mode-Background: hsl(0, 0%, 98%);
+$Dark-Mode-Text-Light-Mode-Elements: hsl(0, 0%, 100%);
+
+// #################################################//
+header {
+	background-color: $Dark-Mode-Elements;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	color: $Dark-Mode-Text-Light-Mode-Elements;
+	h1 {
+		cursor: pointer;
+		font-size: 1rem;
+		font-weight: map-get($font-weight, "semi-bold");
+	}
+}
+.mode-btn {
+	@include flex(row, center);
+	cursor: pointer;
+}
+.fa-moon {
+	margin-right: 0.5rem;
+}
+//main
+main {
+	padding: 1.5rem 1rem;
+	background-color: $Dark-Mode-Background;
+	height: 100vh;
+}
+nav {
+	color: $Dark-Mode-Text-Light-Mode-Elements;
+}
+.search-bar {
+	background-color: $Dark-Mode-Elements;
+	padding-left: 1.5rem;
+	cursor: pointer;
+	margin-bottom: 3rem;
+	border-radius: 3px;
+	input[type="text"] {
+		background-color: $Dark-Mode-Elements;
+		border: none;
+		padding: 0.8rem;
+		color: $Dark-Mode-Text-Light-Mode-Elements;
+		outline: none;
+	}
+	input::placeholder {
+		font-family: "Nunito Sans", sans-serif;
+		color: $Dark-Mode-Text-Light-Mode-Elements;
+	}
+}
+select {
+	background-color: $Dark-Mode-Elements;
+	height: auto;
+	outline: none;
+	border: none;
+	padding: 0.7rem;
+	border-radius: 3px;
+	color: $Dark-Mode-Text-Light-Mode-Elements;
+	font-family: "Nunito Sans", sans-serif;
+	option {
+		margin-bottom: 1rem;
+		outline: none;
+		border: none;
+	}
+}

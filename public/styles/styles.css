@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+}
+
+header {
+  background-color: #2b3945;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  color: white;
+}
+
+header h1 {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.mode-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: centre;
+      -ms-flex-align: centre;
+          align-items: centre;
+  cursor: pointer;
+}
+
+.fa-moon {
+  margin-right: 0.5rem;
+}
+
+main {
+  padding: 1.5rem 1rem;
+  background-color: #202c37;
+  height: 100vh;
+}
+
+nav {
+  color: white;
+}
+
+.search-bar {
+  background-color: #2b3945;
+  padding-left: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+  border-radius: 3px;
+}
+
+.search-bar input[type="text"] {
+  background-color: #2b3945;
+  border: none;
+  padding: 0.8rem;
+  color: white;
+  outline: none;
+}
+
+.search-bar input::-webkit-input-placeholder {
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+}
+
+.search-bar input:-ms-input-placeholder {
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+}
+
+.search-bar input::-ms-input-placeholder {
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+}
+
+.search-bar input::placeholder {
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+}
+
+select {
+  background-color: #2b3945;
+  height: auto;
+  outline: none;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 3px;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+select option {
+  margin-bottom: 1rem;
+  outline: none;
+  border: none;
+}
+/*# sourceMappingURL=styles.css.map */
