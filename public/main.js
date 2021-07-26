@@ -9,12 +9,12 @@ async function getapi(url) {
 	
 	// Storing response
 	const response = await fetch(url);
-	
-    var data =  await response.json()
+	 var data =  await response.json()
+   
    const html = data.map(user =>{
       return `
     <div class="country">
-        <div class="country-flag"></div>
+        <div class="country-flag" style="background-image:url(${user.flag})"></div>
         <div class="country-info">
           <h1 class="country-name">${user.name}</h1>
           <div class="info-key-values">
