@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+}
+
+header {
+  background-color: #2b3945;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  color: white;
+}
+
+header h1 {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.mode-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.mode-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.fa-moon {
+  margin-right: 0.5rem;
+}
+
+main {
+  padding: 1.5rem 1rem;
+  background-color: #202c37;
+}
+
+nav {
+  color: white;
+}
+
+.search-bar {
+  background-color: #2b3945;
+  padding-left: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 2px 5px #111517;
+          box-shadow: 2px 2px 5px #111517;
+}
+
+.search-bar input[type="text"] {
+  background-color: #2b3945;
+  border: none;
+  padding: 0.8rem;
+  color: white;
+  outline: none;
+}
+
+.search-bar input::-webkit-input-placeholder {
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+}
+
+.search-bar input:-ms-input-placeholder {
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+}
+
+.search-bar input::-ms-input-placeholder {
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+}
+
+.search-bar input::placeholder {
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+}
+
+select {
+  background-color: #2b3945;
+  height: auto;
+  outline: none;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 3px;
+  color: white;
+  -webkit-box-shadow: 2px 2px 5px #111517;
+          box-shadow: 2px 2px 5px #111517;
+  font-family: "Nunito Sans", sans-serif;
+  cursor: pointer;
+}
+
+select option {
+  margin-bottom: 1rem;
+  outline: none;
+  border: none;
+}
+
+.countries-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.country {
+  color: white;
+  height: 380px;
+  width: 400px;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 5px 5px 10px #111517;
+          box-shadow: 5px 5px 10px #111517;
+}
+
+.country:hover {
+  -webkit-box-shadow: 8px 8px 10px #111517;
+          box-shadow: 8px 8px 10px #111517;
+}
+
+.country h1 {
+  margin: 1rem 0;
+}
+
+.country-info {
+  padding: 1rem;
+  background-color: #2b3945;
+  height: 50%;
+  border-radius: 0 0 7px 7px;
+}
+
+.info-key-values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.info-key-values p {
+  position: relative;
+  top: 3px;
+  left: 5px;
+  opacity: 0.7;
+}
+
+.country-flag {
+  height: 50%;
+  border-radius: 7px 7px 0 0;
+  background-image: url("https://restcountries.eu/data/afg.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 640px) {
+  .search-bar {
+    max-width: 400px;
+    position: relative;
+    top: 22px;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .countries-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .country {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .countries-section {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .country {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .countries-section {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
